@@ -1,191 +1,311 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.content {
-		background-color: #dbe4ff;
-		max-height: 70%;
-		margin-top: 0px;
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 0%;
-		margin-bottom: 0%;
-		padding-top: 3%;
-		padding-right: 3%;
-		padding-left: 3%;
-		padding-bottom: 3%;
-	}
-	.para_1 {
-		font-size: 23px;
-		font-family: sans-serif;
-		color: black;
-	}
-	[class*="ind"] img {
-		width: 90%;
-		border-radius: 5px;
-		margin-right: 15px;
-		margin-left: 15px;
-	    object-fit: contain;
-	}
-	.ind1 {
-		display: block;
-	}
-	.ind2{
-		display: block;
-	}
+    .content {
+        background-color: #dbe4ff;
+        max-height: 70%;
+        margin-top: 0px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+
+    .jumbotron-cha {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+
+    .sbx1 {
+        margin-right: 5px;
+    }
+
+    .inputS {
+        border-radius: 10px;
+        width: 100px;
+    }
+
+    .para_1 {
+        font-size: 23px;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    [class*="ind"] img {
+        width: 90%;
+        border-radius: 5px;
+        margin-right: 15px;
+        margin-left: 15px;
+        object-fit: contain;
+    }
+
+    .ind1 {
+        display: block;
+    }
+
+    .ind2 {
+        display: block;
+    }
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px){
-	.content {
-		background-color: #dbe4ff;
-		max-height: 70%;
-		margin-top: 0px;
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 0%;
-		margin-bottom: 0%;
-		padding-top: 3%;
-		padding-right: 3%;
-		padding-left: 3%;
-		padding-bottom: 3%;
-	}
-	.para_1 {
-		font-size: 23px;
-		font-family: sans-serif;
-		color: black;
-	}
-	[class*="ind"] img {
-		width: 94%;
-		border-radius: 5px;
-		margin-right: 15px;
-		margin-left: 15px;
-		object-fit: contain;
-	}
-	.ind1 {
-		display: block;
-	}
-	.ind2 {
-		display: block;
-	}
+@media only screen and (min-width: 600px) {
+    .content {
+        background-color: #dbe4ff;
+        max-height: 70%;
+        margin-top: 0px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+    .jumbotron-cha {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+
+    .sbx1 {
+        margin-right: 5px;
+    }
+
+    .inputS {
+        border-radius: 10px;
+        width: 100px;
+    }
+    .para_1 {
+        font-size: 23px;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    [class*="ind"] img {
+        width: 94%;
+        border-radius: 5px;
+        margin-right: 15px;
+        margin-left: 15px;
+        object-fit: contain;
+    }
+
+    .ind1 {
+        display: block;
+    }
+
+    .ind2 {
+        display: block;
+    }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px){
-		.content {
-		background-color: #dbe4ff;
-		max-height: 70%;
-		margin-top: 0px;
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 0%;
-		margin-bottom: 0%;
-		padding-top: 3%;
-		padding-right: 3%;
-		padding-left: 3%;
-		padding-bottom: 3%;
-	}
-	.para_1 {
-		font-size: 23px;
-		font-family: sans-serif;
-		color: black;
-	}
-	[class*="ind"] img {
-		width: 94%;
-		border-radius: 5px;
-		margin-right: 15px;
-		margin-left: 15px;
-		object-fit: contain;
-	}
-	.ind1 {
-		display: block;
-	}
-	.ind2 {
-		display: block;
-	}
+@media only screen and (min-width: 768px) {
+    .content {
+        background-color: #dbe4ff;
+        max-height: 70%;
+        margin-top: 0px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+    .jumbotron-cha {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+
+    .sbx1 {
+        margin-right: 5px;
+    }
+
+    .inputS {
+        border-radius: 10px;
+        width: 100px;
+    }
+
+    .para_1 {
+        font-size: 23px;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    [class*="ind"] img {
+        width: 94%;
+        border-radius: 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+        object-fit: contain;
+    }
+
+    .ind1 {
+        display: block;
+    }
+
+    .ind2 {
+        display: block;
+    }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-		.content {
-		background-color: #dbe4ff;
-		max-height: 70%;
-		margin-top: 0px;
-		margin-left: 7%;
-		margin-right: 7%;
-		margin-top: 0%;
-		margin-bottom: 0%;
-		padding-top: 3%;
-		padding-right: 3%;
-		padding-left: 3%;
-		padding-bottom: 3%;
-	}
-	.para_1 {
-		font-size: 23px;
-		font-family: sans-serif;
-		color: black;
-		position: relative;
-	}
-	[class*="ind"] img {
-		width: 50%;
-		height: 50%;
-		border-radius: 5px;
-		margin-right: 15px;
-		margin-left: 15px;
-		object-fit: contain;
-	}
-	.ind1 {
-		display: inline-flex;
-	}
-	.ind2 {
-		display: inline-flex;
-	}
+    .content {
+        background-color: #dbe4ff;
+        max-height: 70%;
+        margin-top: 0px;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+    .jumbotron-cha {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+
+    .sbx1 {
+        margin-right: 5px;
+    }
+
+    .inputS {
+        border-radius: 10px;
+        width: 100px;
+    }
+    .para_1 {
+        font-size: 23px;
+        font-family: sans-serif;
+        color: black;
+        position: relative;
+    }
+
+    [class*="ind"] img {
+
+        border-radius: 10px;
+        object-fit: contain;
+    }
+
+    .ind1 {
+        display: inline-flex;
+    }
+
+    .ind2 {
+        display: inline-flex;
+    }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-		.content {
-		background-color: #dbe4ff;
-		max-height: 70%;
-		margin-top: 0px;
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 0%;
-		margin-bottom: 0%;
-		padding-top: 3%;
-		padding-right: 3%;
-		padding-left: 3%;
-		padding-bottom: 3%;
-	}
-	.para_1 {
-		font-size: 23px;
-		font-family: sans-serif;
-		color: black;
-	}
-	[class*="ind"] img {
-		width: 40%;
-		border-radius: 5px;
-		margin-right: 15px;
-		margin-left: 15px;
-		object-fit: contain;
-	}
-	.ind1 {
-		display: inline-flex;
-	}
-	.profile {
-		display: inline-flex;
-		grid-gap: 20px;
-	}
-	.pic {
-		border-radius: 100%;
-		width: 40%;
-		height: auto;
-	}
-	.profile h1 {
-		font-size: 30px;
-		font-family: sans-serif;
-		color: black;
-		text-align: right;
-		display: block;
-	}
-	.profile p {
-	font-size: 30px;
-	font-family: sans-serif;
-	color: black;
-	text-align: left;
-	}
+    .jumbotron-cha {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+
+    .sbx1 {
+        margin-right: 5px;
+    }
+
+    .inputS {
+        border-radius: 10px;
+        width: 100px;
+    }
+    .link-img {
+        width: 300px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .img-link {
+
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .content {
+        background-color: #dbe4ff;
+        max-height: 70%;
+        margin-top: 0px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+
+    .para_1 {
+        font-size: 23px;
+        font-family: sans-serif;
+        color: black;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    [class*="ind"] img {
+        border-radius: 10px;
+    }
+
+
+    .jumbotron-cha {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: inline-flex;
+    }
+
+    .sbx1 {
+        margin-right: 5px;
+    }
+
+    .inputS {
+        border-radius: 10px;
+        width: 100px;
+    }
+
+    .ind1 {
+        display: inline-flex;
+    }
+
+    .profile {
+        display: inline-flex;
+        grid-gap: 20px;
+    }
+
+    .pic {
+        border-radius: 100%;
+        width: 40%;
+        height: auto;
+    }
+
+    .profile h1 {
+        font-size: 30px;
+        font-family: sans-serif;
+        color: black;
+        text-align: right;
+        display: block;
+    }
+
+    .profile p {
+        font-size: 30px;
+        font-family: sans-serif;
+        color: black;
+        text-align: left;
+    }
 }
