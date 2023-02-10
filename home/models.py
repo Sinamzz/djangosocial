@@ -61,3 +61,6 @@ class PostView(models.Model):
 
     def __str__(self):
         return '{0} on post {1}'.format(self.ip_address, self.post.id)
+
+class Test(models.Model):
+    pass
