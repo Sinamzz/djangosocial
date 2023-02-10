@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+
     <div class="jumbotron-cha">
         <div class="sbx1">
 
@@ -14,16 +15,27 @@
             </form>
         </div>
     </div>
-    <br/><br/></p>
-    <input type="color" id="myColor">
-    <button onclick="myFunction()">Try it</button>
+    <br/><br/>
+    <button id="dfj"></button>
+    <div id="card">
+        <div id="fgh">
+            <canvas id="colorCanvas" class="color-canvas" width="250" height="250"></canvas>
+            <div id="cur"></div>
+        </div>
+        <div id="content">
 
-    <script>
-        function myFunction() {
-            document.getElementById("myColor").value = "{{ setback.color_code }}";
+            <input type="text" id="text" value="rgb(215,0,41)" spellcheck="false">
+            <input type="button" id="copy" value="COPY" onclick="copyz()">
+        </div>
+
+    </div>
+    <div id="copyr">©gilson dos santos</div>
+    <style id="vars">
+        :root {
+            --colorMain: rgb(215, 0, 41);
         }
-    </script>
-    <p>{{ setback.color_code }}</p>
+    </style>
+    <div id="pop" class="pop ">copied</div>
     {% for post in posts %}
         <div class="content">
             <div class="ind1">
@@ -32,5 +44,6 @@
                                                          target="_blank">{{ post.body|truncatewords:8 }}</p></a>
             </div>
         </div>
+        <script src="{% static 'js/pallete.js' %}"></script>
     {% endfor %}
 {% endblock %}
