@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'django-insecure-6s)(dp3!f+l4^7^o9)8a8m#8j587)6@+zn$4+qqy@of)&9ajgz
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -73,7 +71,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djangosocial.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -83,7 +80,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -103,7 +99,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -115,19 +110,22 @@ USE_I18N = True
 
 USE_TZ = True
 
+ALLOW_UNICODE_SLUGS = True
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
+# https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -136,22 +134,18 @@ AUTHENTICATION_BACKENDS = [
 
 LOGIN_URL = '/account/login/'
 
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-# Google account
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_HOST = ##
-#EMAIL_HOST_USER = ## 
-#EMAIL_PORT = ##
-#EMAIL_HOST_PASSWORD = ## 
-#EMAIL_USE_TLS = True
-#DEFAULT_FROM_EMAIL = ##
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+AUTH_USER_MODEL = 'accounts.User'
 
 # ARVAN CLOUD STORAGES
-# DEFAULT_FILE_STORAGE = ##
-# AWS_ACCESS_KEY_ID = ##
-# AWS_SECRET_ACCESS_KEY = ##
-# AWS_S3_ENDPOINT_URL = ##
-# AWS_STORAGE_BUCKET_NAME = ##
-# AWS_SERVICE_NAME = ##
-# AWS_S3_FILE_OVERWRITE = False
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = '63f018c7-654f-4f6a-a940-01f10b545760'
+AWS_SECRET_ACCESS_KEY = '3d7956e0d049c21633490a059c29f0de47cb43e2'
+AWS_S3_ENDPOINT_URL = 'https://s3.ir-thr-at1.arvanstorage.com'
+AWS_STORAGE_BUCKET_NAME = 'sinamz'
+AWS_SERVICE_NAME = 's3'
+AWS_S3_FILE_OVERWRITE = False
