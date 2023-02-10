@@ -110,10 +110,16 @@ USE_I18N = True
 
 USE_TZ = True
 
-ALLOW_UNICODE_SLUGS = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authenticate.EmailBackend',
+]
+
+LOGIN_URL = '/account/login/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -127,19 +133,11 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'account.authenticate.EmailBackend',
-]
-
-LOGIN_URL = '/account/login/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-AUTH_USER_MODEL = 'accounts.User'
+ALLOW_UNICODE_SLUGS = True
 
 # ARVAN CLOUD STORAGES
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

@@ -9,7 +9,6 @@ from django.utils.text import slugify
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from utils import get_ip_address
-import unidecode
 
 
 class HomeView(View):
@@ -162,6 +161,7 @@ class PostCreateView(LoginRequiredMixin, View):
             new_post = form.save(commit=False)
             new_post.slug = slugify(form.cleaned_data['body'][:30])
             new_post.user = request.user
+            new_post.image = form.cleaned_data['image']
             new_post.save()
             messages.success(request, 'you created a new post', 'success')
             return redirect('home:post_detail', new_post.id, new_post.slug)
