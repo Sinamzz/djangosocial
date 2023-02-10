@@ -1,0 +1,4 @@
+django==4.1
+django-storages
+boto3
+Pillow

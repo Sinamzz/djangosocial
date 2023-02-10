@@ -1,0 +1,138 @@
+.login {
+	background-color: white;
+	height: 70%;
+	margin-top: 5%;
+	margin-left: 32%; 
+	padding: 1%;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+	font-family: sans-serif;
+	width: 500px;
+}
+form {
+	text-align: center;
+}
+input[type=text] {
+	padding: 20px;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	width: 500px;
+	height: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 1px;
+	text-align: left;
+}
+input[type=password] {
+	padding: 20px;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	width: 500px;
+	height: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 1px;
+	text-align: left;
+}
+input[type=text]:focus {
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #F1F1F1;
+	border:none;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	width: 500px;
+	height: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 1px;
+	text-align: left;
+}
+input[type=password]:focus {
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #F1F1F1;
+	border:none;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	width: 500px;
+	height: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 1px;
+	text-align: left;
+}
+input[type=email] {
+	padding: 20px;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	width: 500px;
+	height: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 1px;
+	text-align: left;
+}
+input[type=email]:focus {
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #F1F1F1;
+	border:none;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	width: 500px;
+	height: 50%;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 1px;
+	text-align: left;
+}
+button	{
+	width: 40%;
+	height: 20%;
+	border-radius: 10px;
+	background-color: #4CAF50;
+	border:none;
+}
+button:hover{
+	width: 40%;
+	height: 20%;
+	border-radius: 10px;
+	background-color: #4CAF50;
+	border:none;
+	opacity: 0.9;
+	transition: 0.5s;
+}
+button:active{
+	width: 40%;
+	height: 20%;
+	border-radius: 10px;
+	background-color: #4CAF50;
+	border:none;
+	opacity: 0.7;
+	transition: 0.25s;
+}
+.butt {
+	color: black;
+	padding-top: 20px;
+	padding-left: 60px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.linkB {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+.H3B {
+	color: black;
+	font-size: 20px;
+	padding: 7px;
+}
