@@ -10,7 +10,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    image = models.ImageField(upload_to=f'products/{user}/%m//', null=True, blank=True)
+    image = models.ImageField()
 
     class Meta:
         ordering = ['-created']

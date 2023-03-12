@@ -1,9 +1,10 @@
-body{
-    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+body {
+    background-image: linear-gradient(to right, #84dd76, #57e39f, #18e6c5, #00e7e7, #2ae5ff);
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	body{
-        background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-	}
+    body {
+        background-image: linear-gradient(to right, #84dd76, #57e39f, #18e6c5, #00e7e7, #2ae5ff);
+    }
 }

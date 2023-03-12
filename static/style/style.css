@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .content {
@@ -12,6 +13,26 @@
         padding-right: 3%;
         padding-left: 3%;
         padding-bottom: 3%;
+    }
+
+    .input-box {
+        height: 66px;
+        margin: 0 8px;
+    }
+
+    .input-box i {
+        left: 12px;
+        font-size: 25px;
+    }
+
+    .input-box input {
+        padding: 0 112px 0 50px;
+    }
+
+    .input-box .button {
+        right: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
     }
 
     .jumbotron-cha {
@@ -50,6 +71,12 @@
     .ind2 {
         display: block;
     }
+
+    .full-search {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 210px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -67,6 +94,27 @@
         padding-left: 3%;
         padding-bottom: 3%;
     }
+
+    .input-box {
+        height: 66px;
+        margin: 0 8px;
+    }
+
+    .input-box i {
+        left: 12px;
+        font-size: 25px;
+    }
+
+    .input-box input {
+        padding: 0 112px 0 50px;
+    }
+
+    .input-box .button {
+        right: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
     .jumbotron-cha {
         padding: 20px;
         margin-bottom: 20px;
@@ -81,6 +129,7 @@
         border-radius: 10px;
         width: 100px;
     }
+
     .para_1 {
         font-size: 23px;
         font-family: sans-serif;
@@ -102,6 +151,12 @@
     .ind2 {
         display: block;
     }
+
+    .full-search {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 210px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -119,6 +174,71 @@
         padding-left: 3%;
         padding-bottom: 3%;
     }
+
+    .full-search {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 210px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .input-box {
+        position: relative;
+        height: 76px;
+        max-width: 900px;
+        width: 100%;
+        background: #fff;
+        margin: 0 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-box i,
+    .input-box .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-box i {
+        left: 20px;
+        font-size: 30px;
+        color: #707070;
+    }
+
+    .input-box input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        padding: 0 155px 0 65px;
+        background-color: transparent;
+    }
+
+    .input-box .button {
+        right: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 6px;
+        background-color: #ecbd00;
+        cursor: pointer;
+    }
+
+    .input-box .button.clicked {
+        transform: translateY(-50%) scale(0.98);
+    }
+
     .jumbotron-cha {
         padding: 20px;
         margin-bottom: 20px;
@@ -155,6 +275,12 @@
     .ind2 {
         display: block;
     }
+
+    .full-search {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 210px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -172,6 +298,66 @@
         padding-left: 3%;
         padding-bottom: 3%;
     }
+
+    /* Google Fonts - Poppins */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .input-box {
+        position: relative;
+        height: 76px;
+        max-width: 900px;
+        width: 100%;
+        background: #fff;
+        margin: 0 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-box i,
+    .input-box .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-box i {
+        left: 20px;
+        font-size: 30px;
+        color: #707070;
+    }
+
+    .input-box input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        padding: 0 155px 0 65px;
+        background-color: transparent;
+    }
+
+    .input-box .button {
+        right: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 6px;
+        background-color: #ecbd00;
+        cursor: pointer;
+    }
+
+    .input-box .button.clicked {
+        transform: translateY(-50%) scale(0.98);
+    }
+
     .jumbotron-cha {
         padding: 20px;
         margin-bottom: 20px;
@@ -186,6 +372,7 @@
         border-radius: 10px;
         width: 100px;
     }
+
     .para_1 {
         font-size: 23px;
         font-family: sans-serif;
@@ -206,6 +393,12 @@
     .ind2 {
         display: inline-flex;
     }
+
+    .full-search {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 210px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -216,6 +409,65 @@
         display: inline-flex;
     }
 
+    /* Google Fonts - Poppins */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .input-box {
+        position: relative;
+        height: 76px;
+        max-width: 900px;
+        width: 100%;
+        background: #fff;
+        margin: 0 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-box iconify-icon,
+    .input-box .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .input-box iconify-icon {
+        left: 20px;
+        font-size: 30px;
+        color: #707070;
+    }
+
+    .input-box input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        padding: 0 155px 0 65px;
+        background-color: transparent;
+    }
+
+    .input-box .button {
+        right: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 6px;
+        background-color: #ecbd00;
+        cursor: pointer;
+    }
+
+    .input-box .button.clicked {
+        transform: translateY(-50%) scale(0.98);
+    }
+
     .sbx1 {
         margin-right: 5px;
     }
@@ -224,6 +476,7 @@
         border-radius: 10px;
         width: 100px;
     }
+
     .link-img {
         width: 300px;
         width: 300px;
@@ -308,4 +561,25 @@
         color: black;
         text-align: left;
     }
+
+    .full-search {
+        /*padding-bottom: 20px;
+        padding-left: 210px;
+        padding-top: 20px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
+
+    .create-editprofile {
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .profile-posts {
+        padding-left: 10px;
+        font-size: 40px;
+    }
 }
+
