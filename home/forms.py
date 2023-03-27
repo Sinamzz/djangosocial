@@ -24,4 +24,5 @@ class CommentReplyForm(forms.ModelForm):
 
 
 class PostSearchForm(forms.Form):
-    search = forms.CharField()
+    search = forms.CharField(label='' ,widget=forms.TextInput(attrs={'placeholder': 'Search here...'}))
+    search.widget.attrs.update({'placeholder': 'Search here...'})

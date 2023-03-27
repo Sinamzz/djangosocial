@@ -9,6 +9,7 @@ from django.utils.text import slugify
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from utils import get_ip_address
+from . import tasks
 
 
 class HomeView(View):
@@ -166,3 +167,18 @@ class PostCreateView(LoginRequiredMixin, View):
             new_post.save()
             messages.success(request, 'you created a new post', 'success')
             return redirect('home:post_detail', new_post.id, new_post.slug)
+
+
+class BucketHome(View):
+    template_name = 'home/bucket.html'
+
+    def get(self, request):
+        objects = tasks.all_bucket_objects_task()
+        return render(request, self.template_name, {'objects': objects})
+
+
+class DeleteBucketObject(View):
+    def get(self, request, key):
+        tasks.delete_object_task.delay(key)
+        messages.success(request, 'your object will be delete soon.', 'info')
+        return redirect('home:bucket')

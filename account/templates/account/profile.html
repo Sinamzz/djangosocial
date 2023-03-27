@@ -4,8 +4,10 @@
     <h2 class="text-center">{{ user.username }}</h2>
 
     {% if request.user.id == user.id %}
-        <a href="{% url 'home:post_create' %}" class="btn btn-primary">Create</a>
-        <a href="{% url 'account:edit_user' %}" class="btn btn-info">Edit Profile</a>
+        <div class="create-editprofile">
+            <a href="{% url 'home:post_create' %}" class="btn btn-primary">Create</a>
+            <a href="{% url 'account:edit_user' %}" class="btn btn-info">Edit Profile</a>
+        </div>
     {% endif %}
 
     {% if request.user.id != user.id and not is_following %}
@@ -16,7 +18,13 @@
 
     <div class="card">
         {% for post in posts %}
-            <a href="{{ post.get_absolute_url }}" class="card-body">{{ post.body|truncatewords:8 }}</a>
+            <div class="profile-posts">
+                <a href="{{ post.get_absolute_url }}" class="card-body">{{ post.body|truncatewords:8 }}</a>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}
+
+
+
+<!--3 gesmat kardan safhe baraye post ha-->

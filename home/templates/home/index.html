@@ -2,48 +2,29 @@
 {% load static %}
 
 {% block content %}
-
-    <div class="jumbotron-cha">
-        <div class="sbx1">
-
-            <form action="" method="get">
-                {{ form.as_p }}
-
-                <div class="sbx2">
-                    <input type="submit" value="Search" class="inputS">
-                </div>
-            </form>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <form action="" novalidate>
+        <div class="full-search">
+            <div class="input-box">
+                <i class="uil uil-search"></i>
+                <iconify-icon icon="uil:search"></iconify-icon>
+                <!--<ion-icon name="search-outline"></ion-icon>-->
+                <!--<input type="text" placeholder="Search here..."/>!-->
+                {{ form }}
+                <button class="button" type="submit">Search</button>
+            </div>
         </div>
-    </div>
-    <br/><br/>
-    <button id="dfj"></button>
-    <div id="card">
-        <div id="fgh">
-            <canvas id="colorCanvas" class="color-canvas" width="250" height="250"></canvas>
-            <div id="cur"></div>
-        </div>
-        <div id="content">
-
-            <input type="text" id="text" value="rgb(215,0,41)" spellcheck="false">
-            <input type="button" id="copy" value="COPY" onclick="copyz()">
-        </div>
-
-    </div>
-    <div id="copyr">©gilson dos santos</div>
-    <style id="vars">
-        :root {
-            --colorMain: rgb(215, 0, 41);
-        }
-    </style>
-    <div id="pop" class="pop ">copied</div>
+    </form>
     {% for post in posts %}
         <div class="content">
             <div class="ind1">
                 <a href="{{ post.get_absolute_url }}" class="link-img"><img src="{{ post.image.url }}" class="img_link"></a>
-                <a href="{{ post.get_absolute_url }}"><p href="{{ post.get_absolute_url }}" class="para_1"
-                                                         target="_blank">{{ post.body|truncatewords:8 }}</p></a>
+                <a href="{{ post.get_absolute_url }}" class="axs"><p href="{{ post.get_absolute_url }}" class="h3"
+                                                                     target="_blank">{{ post.body|truncatewords:8 }}</p>
+                </a>
             </div>
         </div>
-        <script src="{% static 'js/pallete.js' %}"></script>
     {% endfor %}
 {% endblock %}

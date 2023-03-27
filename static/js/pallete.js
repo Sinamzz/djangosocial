@@ -1,3 +1,6 @@
+// turned offed / choose background color manually by user
+
+
 var canvasEl = document.getElementById("colorCanvas");
 var canvasContext = canvasEl.getContext("2d");
 
